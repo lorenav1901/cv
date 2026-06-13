@@ -1,0 +1,149 @@
+\documentclass[10pt,a4paper,withhyper]{altacv}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+
+\iftutex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{92487A}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Lorena Bello}
+%% You can add multiple photos on the left or right
+\photoR{2.5cm}{lorena.jpg}
+\personalinfo{%
+  \email{lorenabello1901@gmail.com}
+  \location{Berlin, DE}
+  \github{lorenav1901} 
+  \href{https://www.linkedin.com/in/lorena-bello-037755403/}{\faLinkedin\ Lorena Bello⠀⠀ ⠀⠀⠀ ⠀⠀⠀⠀ ⠀⠀⠀⠀ ⠀⠀⠀⠀ ⠀⠀⠀⠀ ⠀⠀⠀⠀ ⠀⠀}
+  \href{https://lorenav1901.github.io/}{\faHome\ Portfolio}
+  \
+}
+
+\makecvheader
+
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.6}
+
+\cvsection{About ME}
+\begin{paracol}{2}
+A hardworking student that is on their way to getting their bachelor in Computer Science. Quick to learn needed new skills. Experience in customer service and in solving problems. Always looking to improve themselves and their abilities 
+
+
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Store Clerk}}{Plaza Las Americas}{October 2022 -- June 2023}{Caracas, VE}
+\begin{itemize}
+\item Assisted customers with any arising issues 
+\item Helped promote the store in social media with trending posts
+\item Arranged, classified and categorized new incoming products
+\end{itemize}
+
+
+\cvsection{A Day of My Life}
+
+
+\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+\wheelchart{1.5cm}{0.5cm}{%
+  10/13em/accent!30/Learning new languages,
+  25/9em/accent!60/Working on projects,
+  5/11em/accent!10/Enjoying free time,
+  20/11em/accent!40/Spending time with family,
+  5/8em/accent!20/Doing hobbies,
+  30/9em/accent/Studying for my bachelor/
+}
+
+\cvsection{Personal Projects}
+\cvevent{\textbf{\href{https://github.com/lorenav1901/personal_projects}{Temperature convertor \faExternalLink*}}}{A tempature convertor project I made in a University module. Converting Celsius to Fahrenheit and viceversa}{2026}{}
+\cvevent{\textbf{\href{https://github.com/lorenav1901/personal_projects}{Tic Tac Toe Game \faExternalLink*}}}{A Tic-Tac-Toe game I made as a personal project in Python with the use of the Tkinter tool}{2026}{}
+\cvevent{\textbf{\href{https://github.com/lorenav1901/personal_projects}{Connect 4 game \faExternalLink*}}}{A connect 4 game made with Python and the use of Pygame. With features to play against an AI or another player}{2026}{}
+
+\cvevent{\textbf{Database creation}}{Created a database for an university module with the use of DBeaver}{2025}{}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Life Philosophy}
+"Educating the mind without educating the heart is no education at all"
+
+\cvsection{Most Proud of}
+
+\cvachievement{\faTrophy}{Dedication I have}{to complete everything I put my mind to}
+
+\divider
+
+\cvachievement{\faHeartbeat}{Persistence}{Despite challenges and hardships I will keep trying to achieve my goals}
+
+\divider
+
+\cvachievement{\faChartLine}{Improvement}{Always looking to improve myself in every field possible}
+
+\divider
+
+\cvachievement{\faFemale}{Women in STEM}{increasing the community of women in the STEM field }
+
+\cvsection{Strengths}
+
+% skills here
+
+\cvtag{Hard-working}
+\cvtag{Responsible}\\
+\cvtag{Problem Solver}
+
+\divider\smallskip
+
+\cvtag{Python Knowledge}
+\cvtag{SQL}
+\cvtag{HTML \& CSS}
+\cvtag{LinuxShell}
+\cvtag{Jupyter}
+\cvtag{Git \& Github}
+
+\cvsection{Languages}
+
+\cvskill{English - C1}{5}
+\divider
+
+\cvskill{Spanish - Native}{5}
+\divider
+
+\cvskill{German - A2}{2} 
+
+
+\cvsection{Education}
+
+\cvevent{BSc\ in Computer Science}{Gisma University of Applied Sciences}{Jan 2025 -- Present}{}
+
+
+\end{paracol}
+
+\end{document}
